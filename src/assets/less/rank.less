@@ -1,0 +1,100 @@
+.ranking {
+		/deep/ .van-tabs__wrap {
+			border-bottom: 1px solid #ebedf0;
+		}
+
+		.container-box {
+			display: flex;
+			position: fixed;
+			top: 90px;
+			right: 0;
+			bottom: 50px;
+			left: 0;
+
+			.left-nav {
+				flex: 0 0 100px;
+				height: 100%;
+				background-color: #fff;
+				overflow: hidden;
+			}
+
+			.ranking-list-item {
+				height: 40px;
+				padding: 0 12px;
+				color: #333;
+
+				&.active {
+					background-color: #f9f9fb;
+					color: #b83320;
+					font-weight: bold;
+					border-left: 2px solid #b83320;
+				}
+			}
+
+			.ranking-list-item-text {
+				display: block;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+				font-size: 14px;
+				border-bottom: 1px solid #ebedf0;
+			}
+
+			// 排名内容部分
+			.ranking-container {
+				flex: 1;
+				height: 100%;
+				overflow: hidden;
+			}
+
+			.ranking-container-list {
+				padding: 10px 15px 10px 5px;
+				height: 85px;
+
+				img {
+					width: 60px;
+					height: 80px;
+					float: left;
+					margin-right: 15px;
+					border-radius: 2px;
+					box-shadow: 0 2px 1px 2px rgba(0, 0, 0, 0.15);
+				}
+
+				.ranking-detail {
+					float: left;
+					width: calc(~"100% - 75px");
+				}
+
+				h4 {
+					font-size: 14px;
+					margin: 5px 0;
+				}
+
+				.ranking-describe {
+					color: #999;
+					// font-size: 10px;
+					margin: 5px 0;
+					display: -webkit-box; //将对象作为弹性伸缩盒子模型显示
+					-webkit-box-orient: vertical; //设置或检索伸缩盒对象的子元素的排列方式 。
+					-webkit-line-clamp: 2; //设置显示多少行
+					overflow: hidden;
+				}
+
+				.sku {
+					margin: 5px 0;
+					position: relative;
+				}
+
+				.book-class {
+					position: absolute;
+					right: 0;
+					background: #e7e7e7;
+					color: #666;
+					border-radius: 8px;
+					padding: 2px 5px;
+					transform: scale(0.8);
+				}
+			}
+		}
+	}

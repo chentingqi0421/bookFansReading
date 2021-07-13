@@ -1,0 +1,188 @@
+.reader {
+		position: absolute;
+		top: 0px;
+		// right: 0;
+		left: 0;
+		background: rgb(248, 238, 235);
+		z-index: 4;
+		// padding: 0 0 50px 6px;
+		height: 100vh;
+		width: 100%;
+		overflow: hidden;
+		// text-indent: 2em;
+
+		.textCon {
+			background-color: red;
+			font-size: 16px;
+			letter-spacing: 0.2em;
+			// color: #333;
+
+			// 提示如何翻页，遮罩层把页面分为3个部分
+			.bootPage {
+				position: fixed;
+				background: rgba(50, 52, 52, 0.8);
+				z-index: 1000;
+				top: 0;
+				bottom: 0;
+				width: 100%;
+				display: flex;
+
+				.b-item {
+					flex: 1;
+
+					.center {
+						padding: 10px;
+						line-height: 100vh;
+						width: 100%;
+						font-size: 12px;
+						color: #d0d0d0;
+						box-sizing: border-box;
+						text-align: center;
+					}
+				}
+
+				.bootPage-center {
+					border-left: 1px solid #ccc;
+					border-right: 1px solid #ccc;
+				}
+			}
+
+			// 小说内容页面
+			.read-box {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+
+				.read-content {
+					position: absolute;
+					padding: 0 10px;
+					text-align: justify; //文本对齐
+					top: 40px;
+					bottom: 20px;
+
+					.read-section {
+						height: 100%;
+					}
+
+					.read-inner {
+						text-indent: 2em;
+						height: 100%;
+						columns: 355px 1;
+						column-gap: 20px;
+					}
+
+					h3 {
+						margin: 0;
+					}
+				}
+
+				.read-page {
+					position: fixed;
+					left: 0px;
+					bottom: 0;
+					margin: 5px;
+					font-size: 12px;
+					color: #888;
+				}
+			}
+
+			// text-indent: 2em;
+			.texts {
+				columns: 100vw 1;
+				padding-left: 6px;
+				column-gap: 6px;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				height: 100vh;
+				box-sizing: border-box;
+			}
+
+			p {
+				word-wrap: break-word;
+			}
+		}
+
+		/* 下一章目录上一章 控制层 */
+		.control-box {
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			color: #ddd;
+
+			.header {
+				height: 50px;
+				background: #444545;
+				display: flex;
+				line-height: 50px;
+			}
+
+			.left {
+				flex: 1;
+
+				span {
+					font-size: 18px;
+					margin-left: 10px;
+				}
+
+				.van-icon-arrow-left {
+					position: relative;
+					top: 4px;
+					left: 5px;
+				}
+			}
+
+			.right {
+				flex: 1;
+
+				.van-icon {
+					flex: 1;
+					font-size: 25px;
+					vertical-align: middle;
+					margin: 10px;
+				}
+			}
+
+			.footer {
+				position: fixed;
+				height: 150px;
+				width: 100%;
+				background: #444545;
+				bottom: 0;
+				font-size: 20px;
+
+				.footer-box1 {
+					height: 50px;
+					display: flex;
+
+					.footer-box1-item {
+						width: 50%;
+						text-align: center;
+						line-height: 50px;
+					}
+
+					span {
+						padding: 5px 10px;
+						border: 1px solid #ccc;
+						border-radius: 10px;
+					}
+				}
+
+				.footer-eye,
+				.footer-catalog {
+					height: 50px;
+					display: flex;
+
+					span {
+						flex: 1;
+						text-align: center;
+						vertical-align: middle;
+						line-height: 50px;
+					}
+				}
+			}
+		}
+	}

@@ -1,0 +1,120 @@
+.search {
+    /deep/ .van-search {
+        padding: 0;
+    }
+
+    .nav {
+        display: flex;
+
+        /deep/ .van-icon-arrow-left {
+            margin-top: 4px;
+        }
+
+        .nav-back {
+            width: 30px;
+            height: 33.97px;
+            line-height: 33.97px;
+        }
+
+        .nav-s {
+            flex: auto;
+        }
+
+        .nav-cli {
+            font-size: 14px;
+            color: #333;
+            width: 40px;
+            text-align: center;
+            height: 33.97px;
+            line-height: 33.97px;
+        }
+    }
+
+    padding: 10px 20px 0;
+
+    .hot {
+        .hot-head{
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+        }
+
+        .hot-label li {
+            float: left;
+            padding: 10px 15px;
+            margin: 5px 6px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+        }
+    }
+
+    .history-box{
+		.history-head{
+		    font-size: 14px;
+		    height: 50px;
+		    line-height: 50px;
+		    margin-top: 30px;
+		}
+		.history-label li {
+		    float: left;
+		    padding: 10px 15px;
+		    margin: 5px 6px;
+		    border-radius: 5px;
+		    background-color: #f5f5f5;
+		}
+		.history-title{
+		    font-size: 18px;
+		}
+	}
+    /deep/ .van-icon-delete{
+        font-size: 14px;
+        margin-top: 18px;
+    }
+	
+	// 搜索热词部分
+	.content {
+		.hot-head {
+			color: #555;
+	
+			.hot-title {
+				font-size: 20px;
+			}
+		}
+	
+		.hot-more {
+			.van-icon-replay {
+				position: relative;
+				top: 2px;
+				transform: rotate(90deg);
+			}
+		}
+	}
+	
+	// 小说列表部分
+	.search-list {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding: 0 10px;
+		box-sizing: border-box;
+		background: #fff;
+		z-index: 2;
+	
+		li {
+			border-bottom: 1px solid #f3f3f3;
+			line-height: 50px;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1;
+			overflow: hidden;
+			font-size: 16px;
+		}
+	
+		.van-icon-orders-o {
+			font-size: 20px;
+			top: 4px;
+		}
+	}
+}
